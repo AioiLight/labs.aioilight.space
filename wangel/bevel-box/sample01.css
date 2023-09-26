@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+.bevel-box {
+    max-inline-size: 300px;
+
+    margin-inline: auto;
+    padding: 100px 30px;
+
+    background-color: var(--nice-color);
+
+    display: grid;
+    place-items: center;
+
+    clip-path: polygon(var(--radius) 0, calc(100% - var(--radius)) 0, 100% var(--radius), 100% calc(100% - var(--radius)), calc(100% - var(--radius)) 100%, calc(var(--radius)) 100%, 0 calc(100% - var(--radius)), 0 var(--radius));
+    --radius: 16px;
+}
