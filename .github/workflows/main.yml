@@ -1,0 +1,17 @@
+on: push
+name: Deploying to labs.aioilight.space
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+    
+    - name: Syncing Files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: s1007.xrea.com
+        username: aioilight
+        server-dir: public_html/labs.aioilight.space/
+        password: ${{ secrets.ftp_password }}
