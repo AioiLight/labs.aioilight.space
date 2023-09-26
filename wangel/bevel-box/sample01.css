@@ -1,7 +1,15 @@
 @charset "utf-8";
 
-.bevel-box {
-    max-inline-size: 300px;
+.boxes {
+    display: grid;
+    gap: 32px;
+    padding-block: 32px;
+    filter: drop-shadow(0px 0px 8px currentColor);
+}
+
+.box {
+    min-inline-size: min(100%, 280px);
+    max-inline-size: 280px;
 
     margin-inline: auto;
     padding: 100px 30px;
@@ -9,8 +17,15 @@
     background-color: var(--nice-color);
 
     display: grid;
-    place-items: center;
+    place-items: center;    
+}
 
+.bevel {
     clip-path: polygon(var(--radius) 0, calc(100% - var(--radius)) 0, 100% var(--radius), 100% calc(100% - var(--radius)), calc(100% - var(--radius)) 100%, calc(var(--radius)) 100%, 0 calc(100% - var(--radius)), 0 var(--radius));
+    --radius: 16px;
+}
+
+.square-clipped {
+    clip-path: polygon(var(--radius) 0, calc(100% - var(--radius)) 0, calc(100% - var(--radius)) var(--radius), 100% var(--radius), 100% calc(100% - var(--radius)), calc(100% - var(--radius)) calc(100% - var(--radius)), calc(100% - var(--radius)) 100%, calc(var(--radius)) 100%, calc(var(--radius)) calc(100% - var(--radius)), 0 calc(100% - var(--radius)), 0 var(--radius), var(--radius) var(--radius));
     --radius: 16px;
 }
