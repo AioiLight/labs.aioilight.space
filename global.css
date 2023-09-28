@@ -34,4 +34,10 @@
 
 .xrea-ad {
     padding-block: 2em;
+    inline-size: 100%;
+}
+
+.xrea-ad img {
+    max-inline-size: 100%;
+    block-size: auto;
 }
