@@ -2,5 +2,7 @@
 
 .player {
     inline-size: 100%;
+    max-inline-size: 640px;
     block-size: auto;
+    margin-inline: auto;
 }
