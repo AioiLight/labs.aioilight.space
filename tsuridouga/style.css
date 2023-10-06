@@ -1,0 +1,6 @@
+@charset "utf-8";
+
+.player {
+    inline-size: 100%;
+    block-size: auto;
+}
