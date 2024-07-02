@@ -37,7 +37,7 @@
     inline-size: 100%;
 }
 
-.xrea-ad img {
+img {
     max-inline-size: 100%;
     block-size: auto;
 }

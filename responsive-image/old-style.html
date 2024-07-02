@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <!--nobanner-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/global.css">
+        <title>従来のメディアクエリによるレスポンシブ画像</title>
+        <style>
+            @media (max-width: 480px) {
+                .pc {
+                    display: none;
+                }
+            }
+            @media not all and (max-width: 480px) {
+                .sp {
+                    display: none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main class="wrapper">
+            <h1>従来のメディアクエリによるレスポンシブ画像</h1>
+
+            <div class="xrea-ad">
+                <script type="text/javascript" src="https://cache1.value-domain.com/xa.j?site=aioilight.s1007.xrea.com" charset="Shift_JIS"></script>
+            </div>
+
+            <img class="sp" src="pc.webp" alt="野良猫の写真。">
+            <img class="pc" src="pc.webp" alt="野良猫の写真。">
+
+            <p><a href="https://github.com/AioiLight/labs.aioilight.space" target="_blank">GitHub リポジトリ</a></p>
+        </main>
+    </body>
+</html>
