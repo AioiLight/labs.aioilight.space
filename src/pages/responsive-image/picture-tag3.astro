@@ -5,14 +5,11 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <main class="wrapper">
         <h1>picture タグによるレスポンシブ画像</h1>
 
-        <div class="xrea-ad">
-            <script type="text/javascript" src="https://cache1.value-domain.com/xa.j?site=aioilight.s1007.xrea.com" charset="Shift_JIS" is:inline></script>
-        </div>
 
         <script is:inline>
             const p = document.createElement('picture');
             p.innerHTML = '<source srcset="sp.webp" media="(max-width: 480px)"><img src="pc.webp" alt="野良猫の写真。">';
-            document.querySelector('.xrea-ad').after(p);
+            document.querySelector('h1').after(p);
         </script>
 
         <p><a href="https://github.com/AioiLight/labs.aioilight.space" target="_blank">GitHub リポジトリ</a></p>

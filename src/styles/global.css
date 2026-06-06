@@ -32,11 +32,6 @@
     padding: 1em;
 }
 
-.xrea-ad {
-    padding-block: 2em;
-    inline-size: 100%;
-}
-
 img {
     max-inline-size: 100%;
     block-size: auto;
