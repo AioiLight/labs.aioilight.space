@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+<BaseLayout title="picture タグによるレスポンシブ画像">
+    <main class="wrapper">
+        <h1>picture タグによるレスポンシブ画像</h1>
+
+        <div class="xrea-ad">
+            <script type="text/javascript" src="https://cache1.value-domain.com/xa.j?site=aioilight.s1007.xrea.com" charset="Shift_JIS" is:inline></script>
+        </div>
+
+        <picture>
+            <source srcset="sp.webp" media="(max-width: 480px)">
+            <img src="pc.webp" alt="野良猫の写真。">
+        </picture>
+
+        <p><a href="https://github.com/AioiLight/labs.aioilight.space" target="_blank">GitHub リポジトリ</a></p>
+    </main>
+</BaseLayout>

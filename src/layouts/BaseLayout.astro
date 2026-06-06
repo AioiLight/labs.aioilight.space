@@ -1,0 +1,33 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  ogUrl?: string;
+  ogTitle?: string;
+  ogType?: string;
+  ogDescription?: string;
+  ogImage?: string;
+  twitterCard?: string;
+}
+
+const { title, ogUrl, ogTitle, ogType, ogDescription, ogImage, twitterCard } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{title}</title>
+    {ogUrl && <meta property="og:url" content={ogUrl}>}
+    <meta property="og:title" content={ogTitle ?? title}>
+    {ogType && <meta property="og:type" content={ogType}>}
+    {ogDescription && <meta property="og:description" content={ogDescription}>}
+    {ogImage && <meta property="og:image" content={ogImage}>}
+    {twitterCard && <meta name="twitter:card" content={twitterCard}>}
+    <slot name="head" />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
